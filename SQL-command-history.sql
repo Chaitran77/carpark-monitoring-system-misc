@@ -10,3 +10,8 @@
 INSERT INTO Vehicle (Numberplate, TenantID) VALUES ('TN99DRT', 0);
 
 -- DROP DOMAIN numberplateType;
+
+INSERT INTO "Carpark" (total_spaces, used_spaces) VALUES (50, 0);
+INSERT INTO "Camera" (ip_address, event_url, response_format, carpark_id) VALUES ('80.209.154.135', '/NotificationInfo/TollgateInfo', '', 1);
+
+SELECT * FROM "Camera", "Carpark";
